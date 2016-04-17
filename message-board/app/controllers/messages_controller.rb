@@ -38,7 +38,7 @@ def create
   def message_params
     params.require(:message).permit(:name, :body, :age)
   end
-  ## ここまで
+  ## ここまでだよ
   def set_message
     @message = Message.find(params[:id])
   end
